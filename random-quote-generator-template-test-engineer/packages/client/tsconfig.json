@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": false,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "noEmit": true,
+    "paths": {
+      "~/*": ["src/*"]
+    },
+    "skipLibCheck": false,
+    "target": "ESNext",
+    "types": ["vite/client", "@types/jest"]
+  },
+  "include": ["src", "cypress", "vite.config.ts"]
+}

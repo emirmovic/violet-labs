@@ -1,0 +1,28 @@
+{
+  "name": "violet-labs",
+  "version": "1.0.0",
+  "author": "barry Jones",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barryajones/violetlabs-random-quote.git"
+  },
+  "bugs": {
+    "url": "git+https://github.com/barryajones/violetlabs-random-quote/issues"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "references": [
+    {
+      "path": "packages/domain"
+    }
+  ],
+  "scripts": {
+    "build:domain": "yarn workspace @violet-labs/domain build",
+    "start:server": "cd packages/server/ && yarn start:dev",
+    "start:client": "cd packages/client/ && yarn start:dev",
+    "lint": "yarn workspaces run lint"
+  }
+}
