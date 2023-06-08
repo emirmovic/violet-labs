@@ -147,6 +147,7 @@ Could also be resolved by cleaning the data (i.e., make all character names capi
 
 ## Tests
 Here are the test file locations for the components:
+
 packages/client/src/components/App/indexApp.cy.tsx
 
 packages/client/src/components/CharacterList/indexCharacterList.cy.tsx
@@ -156,6 +157,7 @@ packages/client/src/components/Pill/indexPill.cy.tsx
 packages/client/src/components/Quote/indexQuote.cy.tsx
 
 And the e2e:
+
 packages/client/cypress/e2e/theoffice.cy.ts
 
 I initially went the route of adding the 'data-cy' identifer to character buttons in order to test those, then later considered the possibility that more/less characters could be added (hence why you'll see [data-cy=dwightButton] under indexApp.cy.tsx but a loop through buttons in the e2e test)
