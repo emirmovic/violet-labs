@@ -148,8 +148,11 @@ Could also be resolved by cleaning the data (i.e., make all character names capi
 ## Tests
 Here are the test file locations for the components:
 packages/client/src/components/App/indexApp.cy.tsx
+
 packages/client/src/components/CharacterList/indexCharacterList.cy.tsx
+
 packages/client/src/components/Pill/indexPill.cy.tsx
+
 packages/client/src/components/Quote/indexQuote.cy.tsx
 
 And the e2e:
